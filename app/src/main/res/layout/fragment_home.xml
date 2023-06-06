@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img1"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="97dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/logo7" />
+
+    <TextView
+        android:id="@+id/tvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/poppins_bold"
+        android:padding="@dimen/_10sdp"
+        android:text="Timesheet Entry List"
+
+        android:textColor="@color/ColorWhite"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/ThemeOverlay.search"
+        android:queryHint="Search Entry Category List"
+        android:iconifiedByDefault="false"
+        android:closeIcon="@drawable/ic_close"
+
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/background"
+        android:searchIcon="@drawable/ic_search"
+
+        app:layout_constraintTop_toBottomOf="@id/tvNotes" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="397dp"
+        android:layout_height="461dp"
+
+        android:layout_margin="@dimen/_10sdp"
+
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/fabCreateNote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.789"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="431dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="6dp"
+
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fabCreateNote" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabCreateNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="56dp"
+        android:background="@color/ColorDarkBlack"
+        android:backgroundTint="@color/ColorDarkBlack"
+
+        android:src="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:tint="@color/ColorWhite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
