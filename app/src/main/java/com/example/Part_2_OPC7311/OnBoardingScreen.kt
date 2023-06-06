@@ -39,7 +39,7 @@ class OnBoardingScreen : AppCompatActivity() {
                 R.drawable.logo7
             )
         )
-        /*
+/*
         onBoardingData.add(
             OnBoardingData(
                 "Increase profitability",

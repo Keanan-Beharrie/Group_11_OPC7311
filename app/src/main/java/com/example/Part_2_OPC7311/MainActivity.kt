@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         replaceFragment(HomeFragment.newInstance(), true)
+
     }
 
     fun replaceFragment(fragment: Fragment, istransition:Boolean) {

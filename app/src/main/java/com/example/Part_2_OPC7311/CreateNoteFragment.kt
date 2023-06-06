@@ -139,7 +139,7 @@ class CreateNoteFragment : BaseFragment(), EasyPermissions.RationaleCallbacks,
             var noteBottomSheetFragment = NoteBottomSheetFragment.newInstance(noteId)
             noteBottomSheetFragment.show(
                 requireActivity().supportFragmentManager,
-                "Note Bottom Sheet"
+                "Bottom Sheet"
             )
         }
 
@@ -220,11 +220,11 @@ class CreateNoteFragment : BaseFragment(), EasyPermissions.RationaleCallbacks,
 
     private fun saveNote() {
         if (etNoteTitle.text.isNullOrEmpty()) {
-            Toast.makeText(context, "Note Title is Required", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Categorie name Required", Toast.LENGTH_SHORT).show()
         } else if (etNoteSubTitle.text.isNullOrEmpty()) {
-            Toast.makeText(context, "Note Sub Title is Required", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Description is Required", Toast.LENGTH_SHORT).show()
         } else if (etNoteDescription.text.isNullOrEmpty()) {
-            Toast.makeText(context, "Note Description is Required", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, "Categorie information is Required", Toast.LENGTH_SHORT).show()
         } else {
             launch {
                 val notes = Notes()
