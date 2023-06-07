@@ -15,12 +15,13 @@ Features
 3.	The user is able to create a timesheet entry, specifying at least the date, start and end times, description, and category.
 4.	The user is able to optionally add a photograph to each timesheet entry.
 5.	The user is able to set a minimum daily goal for hours worked, as well as a maximum daily goal.
-6.	The user is able to view the list of all the timesheet entries created during a user selectable period. If a photo was stored for an entry, the use must be able to access it from this list
+6.	The user is able to view the list of all the timesheet entries created during a user selectable period. If a photo was stored for an entry, the use must be       able to access it from this list
 7.	The user is able to view the total number of hours spent on each category during a user selectable period
 **************************************************************************************************************************************************************
 Login Details for the application 
 **************************************************************************************************************************************************************
 	Username user
+
 	Password 1234
 **************************************************************************************************************************************************************
 Comments for user
